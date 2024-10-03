@@ -1,12 +1,14 @@
 # aws-serverless-springboot-docs serverless API
 
-DEMO: https://ebzbxun1ld.execute-api.eu-north-1.amazonaws.com/elink-docs/main
-
 The aws-serverless-springboot-docs project, created with [`aws-serverless-java-container`](https://github.com/aws/serverless-java-container).
 
 The starter project defines a simple `/ping` resource that can accept `GET` requests with its tests.
 
 The project folder also includes a `template.yml` file. You can use this [SAM](https://github.com/awslabs/serverless-application-model) file to deploy the project to AWS Lambda and Amazon API Gateway or test in local with the [SAM CLI](https://github.com/awslabs/aws-sam-cli). 
+
+## Demo
+
+https://ebzbxun1ld.execute-api.eu-north-1.amazonaws.com/elink-docs/main
 
 ## Pre-requisites
 * [AWS CLI](https://aws.amazon.com/cli/)
