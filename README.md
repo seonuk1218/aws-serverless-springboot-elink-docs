@@ -1,6 +1,6 @@
 # aws-serverless-springboot-docs serverless API
 
-DEMO: https://ebzbxun1ld.execute-api.eu-north-1.amazonaws.com/elink-docs/home
+DEMO: https://ebzbxun1ld.execute-api.eu-north-1.amazonaws.com/elink-docs/main
 
 The aws-serverless-springboot-docs project, created with [`aws-serverless-java-container`](https://github.com/aws/serverless-java-container).
 
