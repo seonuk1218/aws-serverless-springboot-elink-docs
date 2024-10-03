@@ -56,7 +56,7 @@ public class StreamLambdaHandlerTest {
 
     @Test
     public void page_streamRequest() {
-        InputStream requestStream = new AwsProxyRequestBuilder("/main/adapter.md", HttpMethod.GET)
+        InputStream requestStream = new AwsProxyRequestBuilder("/main/developer/configuration.md", HttpMethod.GET)
                 .header(HttpHeaders.ACCEPT, MediaType.APPLICATION_JSON)
                 .buildStream();
         ByteArrayOutputStream responseStream = new ByteArrayOutputStream();
@@ -64,6 +64,10 @@ public class StreamLambdaHandlerTest {
         handle(requestStream, responseStream);
 
         AwsProxyResponse response = readResponse(responseStream);
+
+        assert response != null;
+        System.out.println(response.getBody());
+
         assertNotNull(response);
         assertEquals(Response.Status.OK.getStatusCode(), response.getStatusCode());
     }
